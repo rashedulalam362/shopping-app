@@ -421,3 +421,9 @@ main .model {
 
   cursor: pointer;
 }
+
+.remove{
+  background-color: aqua;
+  color: white;
+  border-radius: 50%;
+}

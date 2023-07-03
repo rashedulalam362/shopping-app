@@ -65,9 +65,10 @@ function updateCart(){
    cart.forEach((item)=>{
     cartItemEl.innerHTML += `
         <div class="cart-item">
-            <div class="item-info" >
+            <div class="item-info"  >
                 <img src="${item.imgSrc}" alt="${item.name}">
                 <h4>${item.name}</h4>
+                <button onclick="removeCarItem(${item.id})">Remove button</button>
             </div>
             <div class="unit-price">
                 <small>$</small>${item.price}
@@ -123,4 +124,9 @@ function changeUnite(action, id) {
   updateCart(cart);
 }
 
+//remove cart items
 
+function removeCarItem(id){
+    cart=cart.filter((item)=> item.id != id)
+    updateCart()
+}
