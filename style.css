@@ -341,6 +341,7 @@ main .model {
   display: flex;
   justify-content: space-around;
   padding: 10px 0;
+  gap: 2px;
 }
 .cart-item div {
   display: flex;
@@ -422,8 +423,10 @@ main .model {
   cursor: pointer;
 }
 
-.remove{
-  background-color: aqua;
+/* .remove{
+  background-color:black;
   color: white;
-  border-radius: 50%;
-}
+  border-radius: 40%;
+  padding:10px;
+ 
+} */

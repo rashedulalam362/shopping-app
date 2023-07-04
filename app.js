@@ -11,7 +11,7 @@ function renderProdcuts() {
               <div class="item">
                   <div class="item-container">
                       <div class="item-img">
-                          <img src="${product.imgSrc}" alt="${product.name}">
+                          <img class="card-img-top" src="${product.imgSrc}" alt="${product.name}">
                       </div>
                       <div class="desc">
                           <h2>${product.name}</h2>
@@ -68,7 +68,7 @@ function updateCart(){
             <div class="item-info"  >
                 <img src="${item.imgSrc}" alt="${item.name}">
                 <h4>${item.name}</h4>
-                <button onclick="removeCarItem(${item.id})">Remove button</button>
+                <button onclick="removeCarItem(${item.id})" >Remove button</button>
             </div>
             <div class="unit-price">
                 <small>$</small>${item.price}
